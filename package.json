@@ -1,0 +1,31 @@
+{
+  "name": "node-adafruit-bme280",
+  "version": "1.0.0",
+  "description": "Node.js package to access Adafruit BME280 Temperature, Humidity and Pressure Sensor",
+  "main": "./lib/bme280.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcinpopielarz/node-adafruit-bme280.git"
+  },
+  "keywords": [
+    "Adafruit",
+    "BME280",
+    "Pressure",
+    "Humidity",
+    "Temerature",
+    "Sensor",
+    "IoT"
+  ],
+  "author": "marcinpopielarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcinpopielarz/node-adafruit-bme280/issues"
+  },
+  "homepage": "https://github.com/marcinpopielarz/node-adafruit-bme280#readme",
+  "dependencies": {
+    "python-shell": "^0.4.0"
+  }
+}
