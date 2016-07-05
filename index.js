@@ -1,3 +1,7 @@
 var BME280 = require('./lib/bme280.js')
 
-console.log(BME280.temperature());
+BME280.probe(function(temperature, pressure, humidity) {
+  console.log(temperature);
+  console.log(pressure);
+  console.log(humidity);
+});
