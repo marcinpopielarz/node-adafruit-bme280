@@ -1,6 +1,6 @@
 {
   "name": "node-adafruit-bme280",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js package to access Adafruit BME280 Temperature, Humidity and Pressure Sensor",
   "main": "index.js",
   "scripts": {
