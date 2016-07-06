@@ -1,7 +1,14 @@
-var BME280 = require('./lib/bme280.js')
+var PythonShell = require('python-shell');
 
-BME280.probe(function(temperature, pressure, humidity) {
-  console.log(temperature);
-  console.log(pressure);
-  console.log(humidity);
-});
+var BME280 = function() {
+
+}
+
+BME280.prototype.probe = function(cb) {
+  PythonShell.run('read.py', { scriptPath: __dirname+'/python' }, function (err, results) {
+    if (err) throw err;
+    cb.apply(this, results);
+  });
+};
+
+module.exports = new BME280();
